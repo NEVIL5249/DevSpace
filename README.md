@@ -1,49 +1,154 @@
-# Online Code Editor
+# 🚀 DevSpace — Online Code Editor (MERN Stack)
 
-This project is an online code editor with a backend for code compilation and a frontend for the user interface.
+**DevSpace** is a powerful, web-based code editor built using the **MERN stack (MongoDB, Express.js, React.js, Node.js)**. It allows users to **write, compile, and save code**, with full authentication (login/logout), syntax highlighting, and support for multiple languages using the **Judge0 API**.
 
-## Project Structure
+---
 
-The project is divided into two main parts:
+## 🌟 Features
 
-- `code-compiler-backend`: Contains the Node.js backend for handling code compilation requests.
-- `code-compiler-frontend`: Contains the React.js frontend for the user interface.
+- ⚡ Real-time code compilation (via Judge0 API)
+- 🔐 User Authentication (Register / Login / Logout)
+- 🧠 Code Editor with syntax highlighting (Monaco & Ace Editor)
+- 💾 Save and retrieve code snippets from MongoDB
+- 🔄 RESTful API with Express and JWT-based auth
+- 📦 Clean and responsive React frontend
 
-## Setup and Installation
+---
 
-To set up and run this project, follow these steps:
+## 🗂️ Project Structure
 
-### Backend Setup
+```
+DevSpace/
+├── assets/
+├── code-compiler-frontend/     # React frontend (UI and code editor)
+└── code-compiler-backend/      # Node.js + Express backend (API, Auth, DB)
+```
 
-1. Navigate to the `code-compiler-backend` directory:
+---
+
+## 🛠️ Installation & Setup
+
+### ✅ Backend Setup (`code-compiler-backend`)
+
+1. Navigate to the backend folder:
+
    ```bash
    cd code-compiler-backend
    ```
-2. Install the dependencies:
+
+2. Install dependencies:
+
    ```bash
    npm install
    ```
-3. Create a `.env` file in the `code-compiler-backend` directory and add necessary environment variables (e.g., database connection string, port).
+
+3. Create a `.env` file in the backend folder and add:
+
+   ```env
+   JUDGE0_API_KEY=your_judge0_api_key
+   PORT=5000
+   MONGODB_URI=your_mongodb_connection_string
+   JWT_SECRET=your_secret_key
+   ```
+
 4. Start the backend server:
+
    ```bash
    npm start
    ```
 
-### Frontend Setup
+---
 
-1. Navigate to the `code-compiler-frontend` directory:
+### 💻 Frontend Setup (`code-compiler-frontend`)
+
+1. Navigate to the frontend folder:
+
    ```bash
    cd code-compiler-frontend
    ```
-2. Install the dependencies:
+
+2. Install dependencies:
+
    ```bash
    npm install
    ```
-3. Start the frontend development server:
+
+3. Start the React dev server:
+
    ```bash
    npm start
    ```
 
-## Usage
+---
 
-Once both the backend and frontend servers are running, you can access the online code editor in your web browser, typically at `http://localhost:3000` (or whatever port your frontend is configured to run on).
+## 🌐 Accessing DevSpace
+
+Once both servers are running:
+
+- **Frontend:** [http://localhost:3000](http://localhost:3000)
+- **Backend:** [http://localhost:5000](http://localhost:5000)
+
+> 💡 Ensure that the frontend is properly connected to the backend API.
+
+---
+
+## ⚙️ Technologies Used
+
+| Layer        | Stack / Tool                            |
+|--------------|------------------------------------------|
+| Frontend     | React.js, Axios, Monaco Editor, Ace Editor |
+| Backend      | Node.js, Express.js                     |
+| Database     | MongoDB (Mongoose ORM)                  |
+| Authentication | JWT, bcrypt                          |
+| Code Execution | Judge0 API                            |
+
+---
+
+## 📜 Scripts
+
+### Backend
+
+```bash
+npm start     # Run the backend server
+npm run dev   # Run with nodemon for live reload
+```
+
+### Frontend
+
+```bash
+npm start     # Run the React dev server
+npm run build # Build for production
+npm test      # Run tests
+```
+
+---
+
+## 🔐 Environment Variables
+
+Create a `.env` file in the backend folder with:
+
+```env
+JUDGE0_API_KEY=your_judge0_api_key
+PORT=5000
+MONGODB_URI=your_mongo_db_connection_string
+JWT_SECRET=your_jwt_secret_key
+```
+
+---
+
+## 📸 Screenshots 
+
+Here are some screenshots showcasing the features and UI of **DevSpace**:
+
+### 🚀 Landing Page
+![Landing Page](./assets/landing.png)
+
+### 💻 Code Editor
+![Code Editor](./assets/editor.png)
+
+### 🔐 Login Page
+![Login Page](./assets/login.png)
+
+### 🗃️ Saved Code Library
+![Code Library](./assets/library.png)
+---
