@@ -1,0 +1,31 @@
+const languageMap = {
+  'javascript': 63,
+  'python': 71,
+  'java': 62,
+  'cpp': 54,
+  'c': 50,
+  'csharp': 51,
+  'php': 68,
+  'ruby': 72,
+  'swift': 83,
+  'go': 60,
+  'rust': 73,
+  'typescript': 74,
+  'kotlin': 78,
+  'scala': 81,
+  'r': 80,
+  'dart': 69,
+  'elixir': 57,
+  'erlang': 58,
+  'haskell': 61,
+  'lua': 64,
+  'perl': 85,
+  'bash': 46,
+  'powershell': 84,
+  'sql': 82,
+  'html': 74,
+  'css': 52,
+  'markdown': 83
+};
+
+module.exports = languageMap; 
