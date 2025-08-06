@@ -1,4 +1,4 @@
-# 🚀 DevSpace — Online Code Editor (MERN Stack)
+# 🚀 DevSpace — Online Code Editor 
 
 **DevSpace** is a powerful, web-based code editor built using the **MERN stack (MongoDB, Express.js, React.js, Node.js)**. It allows users to **write, compile, and save code**, with full authentication (login/logout), syntax highlighting, and support for multiple languages using the **Judge0 API**.
 
